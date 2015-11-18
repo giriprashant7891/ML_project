@@ -10,7 +10,7 @@ from nltk.stem.porter import PorterStemmer
 data_file = 'data_files/yelp_academic_dataset_business.json'
 out_file = 'data_files/yelp_academic_dataset_business_IL.json'
 
-print "Reading the business file"
+print("Reading the business file")
 out = open(out_file, 'w')
 business_id_set = set()
 with open(data_file, 'r') as file:
@@ -29,7 +29,7 @@ out.close()
 review_file = 'data_files/yelp_academic_dataset_review.json'
 out_file = 'data_files/yelp_academic_dataset_review_IL.json'
 
-print "Reading the reviews file"
+print("Reading the reviews file")
 out = open(out_file, 'w')
 with open(review_file, 'r') as file:
     for line in file:
@@ -44,7 +44,7 @@ out.close()
 review_file = 'data_files/yelp_academic_dataset_checkin.json'
 out_file = 'data_files/yelp_academic_dataset_checkin_IL.json'
 
-print "Reading the check in file"
+print("Reading the check in file")
 out = open(out_file, 'w')
 with open(review_file, 'r') as file:
     for line in file:
